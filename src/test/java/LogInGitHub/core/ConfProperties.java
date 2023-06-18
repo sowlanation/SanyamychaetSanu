@@ -1,4 +1,4 @@
-package LogInGitHub;
+package LogInGitHub.core;
 
 import java.io.FileInputStream;
 import java.io.IOException;

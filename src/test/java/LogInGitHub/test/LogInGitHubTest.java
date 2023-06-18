@@ -1,8 +1,13 @@
-package LogInGitHub;
+package LogInGitHub.test;
 
+import LogInGitHub.core.BaseTest;
+import LogInGitHub.core.ConfProperties;
+import LogInGitHub.core.TypeBrowsers;
+import LogInGitHub.build.LoginPage;
+import LogInGitHub.build.ProfilePage;
+import LogInGitHub.build.RepoPage;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
