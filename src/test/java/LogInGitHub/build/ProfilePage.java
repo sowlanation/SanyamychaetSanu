@@ -14,10 +14,10 @@ public class ProfilePage {
         this.driver = driver;
     }
 
-    @FindBy(xpath = "//div[@class = 'Header-item position-relative mr-0 d-none d-md-flex']//summary[@aria-label = 'View profile and more']")
+    @FindBy(xpath = "//div[@class = 'AppHeader-user']//button[@aria-label = 'Open user account menu']")
     private WebElement avatarMenu;
 
-    @FindBy(xpath = "//*[@class = 'dropdown-menu dropdown-menu-sw']/a[text()='Your repositories']")
+    @FindBy(xpath = "//*[contains(text(), 'Your repositories')]")
     private WebElement btnRepo;
 
     public void clickAvatarMenu() {
