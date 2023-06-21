@@ -51,7 +51,7 @@ public class LogInGitHubTest extends BaseTest {
             profilePage = new ProfilePage(BaseTest.driver);
             profilePage.clickAvatarMenu();
             WebDriverWait wait = new WebDriverWait(BaseTest.driver, Duration.ofSeconds(15));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class = 'Header-item position-relative mr-0 d-none d-md-flex']//summary[@aria-label = 'View profile and more']")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class = 'AppHeader-user']//button[@aria-label = 'Open user account menu']")));
             profilePage.clickBtnRepo();
         }
 
